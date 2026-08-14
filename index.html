@@ -58,17 +58,11 @@
     <footer class="rodape">
         <p>Desenvolvido por Anny Gabrielly - Projeto Alura</p>
     </footer>
-function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
+<!-- Botões de Curtir e Joinha -->
+<div class="interacao-post">
+    <button id="btn-curtir" class="botao-interacao">❤️ Curtir (<span id="contador-curtir">0</span>)</button>
+    <button id="btn-joinha" class="botao-interacao">👍 Joia (<span id="contador-joinha">0</span>)</button>
+</div>
 
-if (curtiu === false) {
-texto.textContent++;
-curtiu = true;
-} else {
-texto.textContent--;
-curtiu = false;
-}
-}
 </body>
 </html>
