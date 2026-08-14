@@ -58,6 +58,17 @@
     <footer class="rodape">
         <p>Desenvolvido por Anny Gabrielly - Projeto Alura</p>
     </footer>
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
 
+if (curtiu === false) {
+texto.textContent++;
+curtiu = true;
+} else {
+texto.textContent--;
+curtiu = false;
+}
+}
 </body>
 </html>
