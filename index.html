@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- CABEÇALHO DA PÁGINA (Padrão de navegação Alura) -->
     <header class="cabecalho">
-        <h1>Meu Blog de Séries</h1>
+        <h1 class="cabecalho__titulo">Meu Blog de Séries</h1>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="#post-1">Beleza Verdadeira</a>
+            <a class="cabecalho__menu__link" href="#post-2">Elenco & Personagens</a>
+            <a class="cabecalho__menu__link" href="#post-3">Comunidade</a>
+        </nav>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="conteudo-principal">
+
         <!-- PRIMEIRO POST: BELEZA VERDADEIRA -->
-        <article class="cartao-post">
+        <article id="post-1" class="cartao-post">
             <h2 class="titulo-post">Beleza Verdadeira (True Beauty)</h2>
             <p class="autor">Por: <strong>Anny Gabrielly</strong></p>
             
@@ -42,25 +51,33 @@
             </div>
         </article>
 
-        <!-- SEGUNDO POST: NOVA CURIOSIDADE -->
-        <article class="cartao-post">
-            <h2 class="titulo-post">Título da Nova Curiosidade</h2>
-            <p class="autor">Por: <strong>Anny</strong></p>
-            <p class="texto-intro">Um dorama de romance e suspense.</p>
+        <!-- SEGUNDO POST: TRIÂNGULO AMOROSO E ELENCO (Adicionado) -->
+        <article id="post-2" class="cartao-post">
+            <h2 class="titulo-post">O Triângulo Amoroso inesquecível: Su-ho vs. Seo-jun</h2>
+            <p class="autor">Por: <strong>Anny Gabrielly</strong></p>
             
+            <p class="texto-intro">
+                Um dos pontos fortes de Beleza Verdadeira é a dinâmica entre os personagens principais e a divisão de torcidas dos fãs!
+            </p>
+            
+            <section class="sinopse">
+                <h3>🎭 Os Personagens Principais</h3>
+                <ul class="lista-personagens">
+                    <li><strong>Lee Su-ho (Cha Eun-woo):</strong> Reservado, tiras notas altas e tem um passado doloroso. É o primeiro a se apaixonar pelo lado verdadeiro de Ju-kyung.</li>
+                    <li><strong>Han Seo-jun (Hwang In-yeop):</strong> O garoto rebelde de jaqueta de couro e moto, mas com um coração protetor e carinhoso com a família.</li>
+                    <li><strong>Lim Ju-kyung (Moon Ga-young):</strong> A protagonista talentosa e expressiva que nos faz rir e se emocionar em cada episódio.</li>
+                </ul>
+            </section>
+
             <!-- Botões do Segundo Post -->
             <div class="botoes-reacao">
                 <button id="botao-coracao-2" class="botao-interacao">❤️ <span>0</span></button>
                 <button id="botao-joinha-2" class="botao-interacao">👍 <span>0</span></button>
             </div>
         </article>
-    </main>
-
-    <footer class="rodape">
-        <p>Desenvolvido por Anny Gabrielly - Projeto Alura</p>
-    </footer>
-            <!-- TERCEIRO POST: CURIOSIDADE SOBRE DORAMAS -->
-        <article class="cartao-post">
+        
+        <!-- TERCEIRO POST: CURIOSIDADE SOBRE DORAMAS -->
+        <article id="post-3" class="cartao-post">
             <h2 class="titulo-post">Curiosidade: O Fenômeno das "Dorameiras" no Brasil</h2>
             <p class="autor">Por: <strong>Anny Gabrielly</strong></p>
             
@@ -85,6 +102,12 @@
             </div>
         </article>
 
+    </main>
+
+    <!-- RODAPÉ DA PÁGINA (Padrão Alura) -->
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Anny Gabrielly no curso de Front-end da Alura.</p>
+    </footer>
 
     <!-- Script carregado no final para garantir o funcionamento -->
     <script src="script.js"></script>
